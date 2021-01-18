@@ -1,0 +1,12 @@
+soma = 0
+vezes = int(input('Diga quantos números serão contabilizados:\n'))
+
+for n in range(1, vezes+1):
+    n = int(input('Diga um número:\n'))
+    while n < 0:
+        print('O número deve ser maior que zero')
+        n = int(input('Diga um número:\n'))
+    soma = soma + n
+    media = soma/vezes
+
+print(f'A média dos números imputados é de: {media}')

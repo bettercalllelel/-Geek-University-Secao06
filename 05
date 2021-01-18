@@ -1,0 +1,7 @@
+soma = 0
+
+for n in range(1, 11):
+    n = int(input('Diga um número:\n'))
+    soma = soma + n
+
+print(f'A soma dos números imputados é de: {soma}')

@@ -1,0 +1,13 @@
+maior = 0
+num = int(input('Diga um número positivo:\n'))
+qtd = []
+
+for n in range(0, num+1):
+    if n > maior:
+        maior = n
+    qtd.append(maior)
+
+print(f'O maior número lido foi {maior}.')
+print(f'O número foi lido {qtd.count(maior)} vez.')
+
+# Houve utilização de um recurso a ser visto no próximo capítulo.

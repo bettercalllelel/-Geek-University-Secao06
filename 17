@@ -1,0 +1,6 @@
+soma = 0
+num = int(input('Diga um número positivo:\n'))
+
+for n in range(0, num+1):
+    soma = soma + n
+print(soma)

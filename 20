@@ -1,0 +1,16 @@
+impar = 0
+par = 0
+num = int(input('Diga a quantidade de números a verificar:\n'))
+
+while num < 1000:
+    for n in range(0, num+1):
+        if n % 2 == 0:
+            print(f'{n} é par.')
+            par = par + 1
+        else:
+            print(f'{n} não é par.')
+            impar = impar + 1
+    num = int(input('Diga uma outra quantidade de números a verificar:'))
+
+print(f'Foram lidos {par} números pares.')
+print(f'Foram lidos {num} no total.')

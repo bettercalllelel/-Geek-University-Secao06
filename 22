@@ -1,0 +1,17 @@
+soma = 0
+media = 0
+qtd = 0
+
+while True:
+    nota = int(input('Diga uma nota entre 10 e 20:\n'))
+    if nota < 10 or nota > 20:
+        print('Número inválido!')
+        break
+
+    else:
+        soma = soma + nota
+        qtd += 1
+        media = soma / qtd
+
+print(f'Foram avaliadas {qtd} notas.')
+print(f'A média aritmética é {media}')

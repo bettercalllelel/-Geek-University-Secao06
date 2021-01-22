@@ -1,0 +1,14 @@
+par = 0
+impar = 1
+num1 = int(input('Diga um número inicial:\n'))
+num2 = int(input('Diga o número final:\n'))
+
+for n in range(num1, num2+1):
+    if n % 2 == 0:
+        par = par + n
+    else:
+        impar = impar * n
+
+
+print(f'A soma dos números pares é {par}.')
+print(f'O produto dos números ímpares é {impar}.')
